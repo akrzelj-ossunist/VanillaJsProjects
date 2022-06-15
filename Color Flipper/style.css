@@ -1,0 +1,66 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    box-shadow: 0px 10px 10px rgb(196, 187, 187);
+}
+nav p{
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: rgb(70, 130, 185);
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav button{
+    margin-top: 17px;
+    border: none;
+    background-color: inherit;
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: black;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.1s linear;
+}
+nav button:hover{
+    cursor: pointer;
+    color: rgb(70, 130, 185);
+}
+.change-body{
+    display: block;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 15%;
+    width: fit-content;
+}
+.change-body section{
+    display: block;
+    width: fit-content;
+    font-size: 50px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    padding-left: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.change-body button{
+    padding: 10px 20px 10px 20px;
+    border: 2px solid black;
+    border-radius: 6px;
+    background-color: inherit;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s linear;
+    margin-left: 37%;
+}
+.change-body button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}

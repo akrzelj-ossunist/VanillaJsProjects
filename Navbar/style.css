@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+body{
+    background-color: aliceblue;
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    box-shadow: 10px 0 10px grey;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.logo{
+    display: flex;
+}
+.logo p{
+    font-size: 30px;
+    margin: 15px;
+    margin-right: 0px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.logo p:last-child{
+    color: hsl(205, 90%, 76%);
+}
+.links{
+    margin-top: 25px;
+}
+.links a{
+    margin-right: 15px;
+    letter-spacing: 4px;
+    font-size: 16px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+    
+}
+.socials{
+    margin-top: 28px;
+}
+.socials a{
+    margin-right: 10px;
+}
+.ham{
+    display: none;
+    position: fixed;
+    top: 27px;
+    left: 90%;
+    transform: rotate(90deg);
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+.bar{
+    border: 2px solid hsl(205, 90%, 76%);
+    margin: 2px;
+    border-radius: 5px;
+    transition: 0.3s linear;
+}
+.links-drop{
+    display: none;
+}
+@media(max-width: 800px){
+    .links a{
+        display: none;
+    }
+    .socials a{
+        display: none;
+    }
+    .logo{
+        margin-bottom: -50px;
+    }
+    .ham{
+        display: block;
+        
+    }
+    .ham:hover .bar{
+        border-color: hsl(205, 86%, 17%);
+    }
+    .ham:hover{
+        transform: rotate(180deg);
+    }
+    nav{
+        flex-direction: column;
+    }
+    .links-drop{
+        display: flex;
+        height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        letter-spacing: 4px;
+        font-size: 16px;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        cursor: pointer;
+        transition: all 0.3 linear;
+    }
+    .active{
+        height: 10rem;
+    }
+    .links-drop a{
+        padding: 10px;
+        transition: 0.3s linear;
+    }
+    .links-drop a:hover{
+        background-color: hsl(205, 90%, 88%);
+        color: hsl(205, 89%, 70%);
+    }
+}

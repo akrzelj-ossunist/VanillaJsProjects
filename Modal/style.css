@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+.body{
+    background: url('./bckg.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    text-align: center;
+}
+.block{
+    margin-top: 20%;
+    background-color: white;
+    margin: auto;
+    margin-top: 18%;
+    width: fit-content;
+    padding: 5px 80px 70px 80px;
+    border-radius: 10px;
+    box-shadow: -1px 1px 3px 6px grey;
+}
+.block h1{
+    font-size: 66px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: hsl(205, 86%, 17%);
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+.block button{
+    border: 2px solid #49a6e9;
+    border-radius: 8px;
+    padding: 5px 10px 5px 10px;
+    letter-spacing: 3px;
+    font-size: 15px;
+    background-color: #49a6e9;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+.block button:hover{
+    background-color: white;
+    color: #49a6e9;
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.modal div{
+    background-color: azure;
+    margin: auto;
+    width: fit-content;
+    padding: 10px 100px 10px 100px;
+    margin-top: 10%;
+    animation: drop 0.5s linear;
+    border-radius: 10px;
+}
+.modal i{
+    margin-left: 120%;
+    margin-top: 5%;
+    font-size: 25px;
+    color: red;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+.modal i:hover{
+    transform: scale(1.3);
+    color: darkred;
+}
+.show{
+    display: block;
+}
+@keyframes drop{
+    from{margin-top: 0px;}
+    to{margin-top: 10%;}
+}
