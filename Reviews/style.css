@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+body{
+    background-color: aliceblue;
+}
+main{
+    margin: auto;
+    max-width: 600px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px 20px 30px 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s linear;
+    font-family: "Roboto", sans-serif;
+}
+main:hover{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4)
+}
+.name{
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 17px;
+    color: hsl(205, 86%, 17%);
+}
+.job{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: hsl(205, 89%, 70%);
+    margin-top: -15px;
+}
+.description{
+    color: hsl(209, 23%, 60%);
+    font-size: 17px;
+    line-height: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.buttons button{
+    border: none;
+    background-color: inherit;
+    font-size: 20px;
+    cursor: pointer;
+    color: hsl(205, 90%, 76%);
+    margin: -10px 10px 10px 10px;
+}
+.suprise{
+    border: hsl(205, 78%, 60%) solid 2px;
+    border-radius: 8px;
+    color: hsl(205, 78%, 60%);
+    background-color: hsl(205, 100%, 96%);
+    padding: 5px 10px 5px 10px;
+    transition: 0.3s linear;
+}
+.suprise:hover{
+    background-color: hsl(205, 78%, 60%);
+    color: hsl(205, 100%, 96%);
+    cursor: pointer;
+}
+main img{
+    width: 170px;
+    height: 170px;
+    border-radius: 100%;
+    object-fit: cover;
+    box-shadow: 7px -7px hsl(205, 78%, 60%);
+}
+header{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 40px;
+    text-align: center;
+}
+header h1{
+    font-size: 42px;
+    letter-spacing: 3px;
+    margin-top: 4%;
+    font-family: "Roboto", sans-serif;
+    color: hsl(209, 61%, 16%);
+}
+.line{
+    border:hsl(205, 78%, 60%) 2px solid;
+    margin: auto;
+    margin-top: -15px;
+    margin-bottom: 35px;
+    width: 80px;
+}
