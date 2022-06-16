@@ -28,8 +28,7 @@ const firstPage = user => {
   document.querySelector('p').innerHTML = `${user.name}`
   document.querySelector('img').src = user.picture 
   document.querySelector('h4').innerHTML = `My name is`
-  document.querySelector('button').style.color = '#49a6e9'
-  document.querySelector('button').style.transform = 'scale(1.3)'
+  changeBtnColor(document.querySelector('button'))
 }
 
 const displayData = user => document.querySelectorAll('button').forEach(button => {
