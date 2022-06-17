@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap"); 
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body{
+    background-color: aliceblue;
+}
+h1{
+    color: #c59d5f;
+    font-size: 40px;
+    font-family: "Great Vibes", cursive;
+    letter-spacing: 3px;
+    margin: auto;
+    max-width: 300px;
+    margin-top: 5%;
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+}
+.question button{
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+section{
+    margin: auto;
+    max-width: 600px;
+    margin-top: 5%;
+}
+article{
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+article h3{
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 3px;
+    font-weight:lighter;
+    font-size: 16px;
+    margin: 20px 0 20px 0;
+}
+article button{
+    margin-right: 20px;
+    font-size: 25px;
+    color: #c59d5f;
+    transition: 0.3s linear;
+}
+article button:hover{
+    transform: rotate(90deg);
+}
+article p.active{
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    width: 80%;
+    padding-top: 20px;
+    width: 96%;
+    font-size: 16px;
+    line-height: 25px;
+    font-family: "Open Sans", sans-serif;
+    color: hsl(209, 23%, 60%);
+    padding-bottom: 20px;
+    margin-top: -5px;
+}
+@media(max-width: 700px){
+    article h3{
+        font-size: 14px;
+    }
+    article p.active{
+        font-size: 14px;
+    }
+}
