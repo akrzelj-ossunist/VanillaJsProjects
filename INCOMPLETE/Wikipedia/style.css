@@ -1,0 +1,27 @@
+body{
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+div{
+    margin: auto;
+    max-width: 300px;
+    margin-top: 10%;
+    display: flex;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    max-width: 1200px;
+    grid-gap: 30px;
+}
+a{
+    text-decoration: none;
+}
+article{
+    height: 250px;
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
