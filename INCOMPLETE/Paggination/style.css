@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+body{
+    background-color: aliceblue;
+}
+header h1{
+    margin: auto;
+    max-width: 250px;
+    margin-top: 5%;
+    font-size: 50px;
+    margin-bottom: 0.5%;
+}
+header div{
+    border-bottom: 4px solid;
+    width: 120px;
+    margin: auto;
+    max-width: 700px;
+    margin-bottom: 3%;
+}
+.load {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: 5px solid #94a3b8;
+    border-radius: 100%;
+    border-top-color:#645cff;
+    animation: circle 0.6s linear infinite;
+    position: fixed;
+    left: 47%;
+    top: 25%;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+.loading{
+    position: fixed;
+    left: 45.7%;
+    font-family: "Open Sans", sans-serif;
+    top: 17%;
+    font-size: 40px;
+    color: hsl(210, 22%, 49%);
+    margin-top: 4rem;
+}
+.users{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto;
+    max-width: 1100px;
+    text-align: center;
+    gap: 30px
+}
+.users img{
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.users article{
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px 0 30px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+@keyframes circle{
+    100%{transform: rotate(360deg)}
+}
+
+@media(max-width: 1114px){
+    .users{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media(max-width: 900px){
+    .users{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(max-width: 600px){
+    .users{
+        grid-template-columns: 1fr;
+    }
+}
+
